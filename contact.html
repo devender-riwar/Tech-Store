@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Tech Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html"><span class="dot"></span>TECH STORE</a>
+    <div class="nav-links" id="navLinks">
+      <a href="shop.html">Shop</a>
+      <a href="categories.html">Categories</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html">Order</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="shop.html">Shop now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="page-banner">
+    <div class="wrap">
+      <span class="section-tag">Get in touch</span>
+      <h1>Contact</h1>
+      <p>Questions about a product, an order, or anything else — send it over and we'll reply within 4 hours.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap" style="display:grid; grid-template-columns: 1fr 340px; gap: 40px; align-items:start;">
+      <div class="form-card">
+        <form id="contactForm">
+          <div class="form-row-2">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" required placeholder="Jordan Lee">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="you@email.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="topic">Topic</label>
+            <select id="topic">
+              <option>Product question</option>
+              <option>Order issue</option>
+              <option>Warranty / repair</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="Tell us what's going on..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send message</button>
+          <div class="success-msg" id="contactSuccess">✓ Message received. We'll reply within 4 hours.</div>
+        </form>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="info-card">
+          <h3>Email</h3>
+          <div class="mono-detail">support@techstore.example</div>
+        </div>
+        <div class="info-card">
+          <h3>Hours</h3>
+          <p>Monday–Friday, 9am–7pm</p>
+        </div>
+        <div class="info-card">
+          <h3>Track an order</h3>
+          <p>Already ordered? Check status directly.</p>
+          <div class="mono-detail"><a href="order.html">Go to Order →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><span class="dot"></span>TECH STORE</div>
+        <p style="color:var(--text-dim); font-size:14px; margin-top:14px; max-width:260px;">Smartwatches, earbuds, and headphones sold with the full spec sheet up front.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html#smartwatches">Smartwatches</a></li>
+          <li><a href="shop.html#earbuds">Earbuds</a></li>
+          <li><a href="shop.html#headphones">Headphones</a></li>
+          <li><a href="categories.html">All categories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Warranty</a></li>
+          <li><a href="support.html">Returns</a></li>
+          <li><a href="order.html">Track order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">About</a></li>
+          <li><a href="support.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tech Store</span>
+      <span>Built for people who read the datasheet.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
