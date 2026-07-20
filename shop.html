@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop — Tech Store</title>
+<title>Tech Store — Smartwatches, Earbuds & Headphones</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -30,30 +30,56 @@
 </header>
 
 <main>
-  <div class="page-banner">
-    <div class="wrap">
-      <span class="section-tag">Full catalog</span>
-      <h1>Shop</h1>
-      <p>Smartwatches, earbuds, and headphones — every listing shows the full spec readout on hover.</p>
-    </div>
-  </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">NEW · PULSE SERIES IN STOCK</span>
+        <h1>Wearables and audio, <span>read like a datasheet.</span></h1>
+        <p class="sub">No marketing fog. Every smartwatch, earbud, and headphone on Tech Store ships with the full spec readout up front — battery life, drivers, and sensors included — so you buy on facts, not photos.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-primary btn-lg">Browse the catalog</a>
+          <a href="categories.html" class="btn btn-ghost btn-lg">Shop by category</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item"><b>48hr</b>ship window</div>
+          <div class="trust-item"><b>2yr</b>full warranty</div>
+          <div class="trust-item"><b>30-day</b>return, no fee</div>
+        </div>
+      </div>
 
-  <section>
+      <div class="readout">
+        <div class="readout-top">
+          <span>UNIT_02 · PULSE WATCH</span>
+          <span class="live">● LIVE SPEC</span>
+        </div>
+        <div class="readout-img">
+          <img class="product-image" src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=900&q=85" alt="Tech Store product" loading="lazy">
+        </div>
+        <div class="spec-line"><span>Display</span><span>AMOLED, 1.4"</span></div>
+        <div class="spec-line"><span>Battery life</span><span>9 days</span></div>
+        <div class="spec-line"><span>Water rating</span><span>5 ATM</span></div>
+        <div class="spec-line"><span>Sensors</span><span>HR, SpO2, GPS</span></div>
+        <div class="spec-line"><span>Price</span><span>₹20,999</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
     <div class="wrap">
-      <div class="filter-tabs">
-        <button class="filter-tab" data-filter="all">All</button>
-        <button class="filter-tab" data-filter="smartwatches">Smartwatches</button>
-        <button class="filter-tab" data-filter="earbuds">Earbuds</button>
-        <button class="filter-tab" data-filter="headphones">Headphones</button>
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Catalog</span>
+          <h2>Featured this week</h2>
+        </div>
+        <p>Hover any unit for its full spec readout before you commit.</p>
       </div>
 
       <div class="products">
 
-        <!-- Smartwatches -->
-        <div class="card" data-category="smartwatches">
+        <div class="card">
           <div class="card-media">
             <span class="card-tag">BESTSELLER</span>
-            <svg width="70" height="90" viewBox="0 0 70 90" fill="none"><rect x="15" y="6" width="40" height="12" rx="3" stroke="#4C7DFF" stroke-width="2"/><rect x="8" y="18" width="54" height="58" rx="12" stroke="#4C7DFF" stroke-width="2"/><circle cx="35" cy="47" r="18" stroke="#5FE1C4" stroke-width="2"/><rect x="15" y="76" width="40" height="12" rx="3" stroke="#4C7DFF" stroke-width="2"/></svg>
+            <img class="product-image" src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85" alt="Tech Store product" loading="lazy">
           </div>
           <div class="card-body">
             <h3>Pulse Watch SE</h3>
@@ -64,57 +90,16 @@
               <div class="spec-line"><span>Water rating</span><span>5 ATM</span></div>
             </div>
             <div class="card-footer">
-              <div class="price">$249</div>
+              <div class="price">₹20,999</div>
               <button class="add-btn" aria-label="Add to cart">+</button>
             </div>
           </div>
         </div>
 
-        <div class="card" data-category="smartwatches">
+        <div class="card">
           <div class="card-media">
             <span class="card-tag">NEW</span>
-            <svg width="70" height="90" viewBox="0 0 70 90" fill="none"><rect x="18" y="8" width="34" height="12" rx="3" stroke="#4C7DFF" stroke-width="2"/><rect x="10" y="20" width="50" height="54" rx="14" stroke="#4C7DFF" stroke-width="2"/><rect x="22" y="32" width="26" height="30" rx="4" stroke="#5FE1C4" stroke-width="2"/><rect x="18" y="74" width="34" height="12" rx="3" stroke="#4C7DFF" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Pulse Watch Pro</h3>
-            <p class="desc">Titanium case, always-on display, and dual-frequency GPS.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>Display</span><span>AMOLED 1.6", always-on</span></div>
-              <div class="spec-line"><span>Battery</span><span>6 days</span></div>
-              <div class="spec-line"><span>Case</span><span>Titanium</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$399</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-category="smartwatches">
-          <div class="card-media">
-            <span class="card-tag">IN STOCK</span>
-            <svg width="70" height="90" viewBox="0 0 70 90" fill="none"><rect x="15" y="6" width="40" height="10" rx="3" stroke="#4C7DFF" stroke-width="2"/><rect x="6" y="16" width="58" height="60" rx="18" stroke="#4C7DFF" stroke-width="2"/><circle cx="35" cy="46" r="16" stroke="#5FE1C4" stroke-width="2"/><rect x="15" y="76" width="40" height="10" rx="3" stroke="#4C7DFF" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Pulse Watch Lite</h3>
-            <p class="desc">Lightweight fitness watch built for daily training.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>Display</span><span>LCD 1.2"</span></div>
-              <div class="spec-line"><span>Battery</span><span>14 days</span></div>
-              <div class="spec-line"><span>Weight</span><span>32g</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$149</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Earbuds -->
-        <div class="card" data-category="earbuds">
-          <div class="card-media">
-            <span class="card-tag">NEW</span>
-            <svg width="90" height="60" viewBox="0 0 90 60" fill="none"><ellipse cx="25" cy="30" rx="16" ry="20" stroke="#4C7DFF" stroke-width="2"/><ellipse cx="65" cy="30" rx="16" ry="20" stroke="#4C7DFF" stroke-width="2"/><circle cx="25" cy="24" r="5" stroke="#5FE1C4" stroke-width="2"/><circle cx="65" cy="24" r="5" stroke="#5FE1C4" stroke-width="2"/></svg>
+            <img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Tech Store product" loading="lazy">
           </div>
           <div class="card-body">
             <h3>Aria Buds Pro</h3>
@@ -125,57 +110,16 @@
               <div class="spec-line"><span>Driver</span><span>11mm dynamic</span></div>
             </div>
             <div class="card-footer">
-              <div class="price">$179</div>
+              <div class="price">₹14,999</div>
               <button class="add-btn" aria-label="Add to cart">+</button>
             </div>
           </div>
         </div>
 
-        <div class="card" data-category="earbuds">
-          <div class="card-media">
-            <span class="card-tag">BESTSELLER</span>
-            <svg width="90" height="60" viewBox="0 0 90 60" fill="none"><circle cx="25" cy="30" r="16" stroke="#4C7DFF" stroke-width="2"/><circle cx="65" cy="30" r="16" stroke="#4C7DFF" stroke-width="2"/><path d="M25 14v-4M65 14v-4" stroke="#5FE1C4" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Aria Buds Air</h3>
-            <p class="desc">Lightweight open-fit buds for calls and all-day wear.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>Fit</span><span>Open-ear</span></div>
-              <div class="spec-line"><span>Battery</span><span>6hr + 20hr case</span></div>
-              <div class="spec-line"><span>Weight</span><span>4.5g each</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$129</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-category="earbuds">
+        <div class="card">
           <div class="card-media">
             <span class="card-tag">IN STOCK</span>
-            <svg width="90" height="60" viewBox="0 0 90 60" fill="none"><ellipse cx="25" cy="30" rx="14" ry="18" stroke="#4C7DFF" stroke-width="2"/><ellipse cx="65" cy="30" rx="14" ry="18" stroke="#4C7DFF" stroke-width="2"/><rect x="18" y="44" width="14" height="8" rx="2" stroke="#5FE1C4" stroke-width="2"/><rect x="58" y="44" width="14" height="8" rx="2" stroke="#5FE1C4" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Aria Buds Sport</h3>
-            <p class="desc">Ear-hook fit built to survive sweat and hard resets.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>Water rating</span><span>IPX7</span></div>
-              <div class="spec-line"><span>Battery</span><span>8hr + 28hr case</span></div>
-              <div class="spec-line"><span>Fit</span><span>Ear-hook</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$99</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Headphones -->
-        <div class="card" data-category="headphones">
-          <div class="card-media">
-            <span class="card-tag">IN STOCK</span>
-            <svg width="90" height="70" viewBox="0 0 90 70" fill="none"><path d="M10 55c0-25 15-40 35-40s35 15 35 40" stroke="#4C7DFF" stroke-width="2"/><rect x="5" y="50" width="18" height="16" rx="4" stroke="#5FE1C4" stroke-width="2"/><rect x="67" y="50" width="18" height="16" rx="4" stroke="#5FE1C4" stroke-width="2"/></svg>
+            <img class="product-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Tech Store product" loading="lazy">
           </div>
           <div class="card-body">
             <h3>Quiet Coil Headset</h3>
@@ -186,52 +130,77 @@
               <div class="spec-line"><span>Driver</span><span>40mm planar</span></div>
             </div>
             <div class="card-footer">
-              <div class="price">$249</div>
+              <div class="price">₹20,999</div>
               <button class="add-btn" aria-label="Add to cart">+</button>
             </div>
           </div>
         </div>
 
-        <div class="card" data-category="headphones">
-          <div class="card-media">
-            <span class="card-tag">BESTSELLER</span>
-            <svg width="90" height="70" viewBox="0 0 90 70" fill="none"><path d="M10 55c0-25 15-40 35-40s35 15 35 40" stroke="#4C7DFF" stroke-width="2"/><rect x="4" y="48" width="20" height="18" rx="5" stroke="#5FE1C4" stroke-width="2"/><rect x="66" y="48" width="20" height="18" rx="5" stroke="#5FE1C4" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Quiet Coil Studio</h3>
-            <p class="desc">Reference-tuned closed-back headphones for critical listening.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>Frequency range</span><span>10Hz–40kHz</span></div>
-              <div class="spec-line"><span>Battery</span><span>Wired, no battery</span></div>
-              <div class="spec-line"><span>Driver</span><span>50mm dynamic</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$329</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card" data-category="headphones">
-          <div class="card-media">
-            <span class="card-tag">NEW</span>
-            <svg width="90" height="70" viewBox="0 0 90 70" fill="none"><path d="M14 50c0-22 14-36 31-36s31 14 31 36" stroke="#4C7DFF" stroke-width="2"/><rect x="8" y="46" width="16" height="14" rx="4" stroke="#5FE1C4" stroke-width="2"/><rect x="66" y="46" width="16" height="14" rx="4" stroke="#5FE1C4" stroke-width="2"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Quiet Coil Travel</h3>
-            <p class="desc">Foldable ANC headphones with a 40-hour battery for long trips.</p>
-            <div class="card-specs">
-              <div class="spec-line"><span>ANC depth</span><span>-30dB</span></div>
-              <div class="spec-line"><span>Battery</span><span>40 hrs</span></div>
-              <div class="spec-line"><span>Fold</span><span>Flat-folding</span></div>
-            </div>
-            <div class="card-footer">
-              <div class="price">$219</div>
-              <button class="add-btn" aria-label="Add to cart">+</button>
-            </div>
-          </div>
+  <section id="categories-preview">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Browse by build</span>
+          <h2>Shop by category</h2>
         </div>
+        <p>Every category page filters and sorts by the specs that actually matter.</p>
+      </div>
+      <div class="categories">
+        <a class="cat-card" href="shop.html#smartwatches">
+          <div class="icon">◐</div>
+          <h3>Smartwatches</h3>
+          <p>Health tracking, always-on displays, week-long battery.</p>
+          <span class="cat-link">Shop smartwatches →</span>
+        </a>
+        <a class="cat-card" href="shop.html#earbuds">
+          <div class="icon">▣</div>
+          <h3>Earbuds</h3>
+          <p>True wireless, ANC, and sport-ready fits.</p>
+          <span class="cat-link">Shop earbuds →</span>
+        </a>
+        <a class="cat-card" href="shop.html#headphones">
+          <div class="icon">▭</div>
+          <h3>Headphones</h3>
+          <p>Over-ear comfort with studio-grade drivers.</p>
+          <span class="cat-link">Shop headphones →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <section class="bench" id="bench">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Why Tech Store</span>
+          <h2>Numbers, not adjectives</h2>
+        </div>
+        <p>We publish the same benchmark suite on every listing, run in-house.</p>
+      </div>
+      <div class="bench-grid">
+        <div class="bench-item"><div class="num">99.4%</div><div class="label">SHIP ON TIME</div></div>
+        <div class="bench-item"><div class="num">4.8/5</div><div class="label">VERIFIED REVIEWS</div></div>
+        <div class="bench-item"><div class="num">4hr</div><div class="label">AVG SUPPORT REPLY</div></div>
+        <div class="bench-item"><div class="num">9k+</div><div class="label">UNITS BENCHMARKED</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="wrap">
+      <div class="cta-panel">
+        <div>
+          <h2>Get restock alerts before they sell out.</h2>
+          <p>One email a week. Specs, price drops, and nothing else.</p>
+        </div>
+        <form class="cta-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed';">
+          <input type="email" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
       </div>
     </div>
   </section>
@@ -272,7 +241,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Tech Store</span>
-      <span>Built for people who read the datasheet.</span>
+      <span>Made with ❤️ for tech enthusiasts</span>
     </div>
   </div>
 </footer>
